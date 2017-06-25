@@ -1,4 +1,7 @@
-package lesson170624;
+package lesson170624.homework;
+
+import lesson170624.classwork.MathUtils;
+import lesson170624.classwork.SimpleUnit;
 
 /**
  * Created by kseni on 24.06.2017.

@@ -1,4 +1,4 @@
-package lesson170624;
+package lesson170624.classwork;
 
 /**
  * Created by kseni on 24.06.2017.
@@ -21,6 +21,7 @@ public class SimpleUnit {
         if (!equals) System.err.println("Test failed: expected: " + expected + " actual: " + actual);
         return equals;
     }
+
     public static boolean assertNotEquals(int actual, int expected) {
         boolean notEquals = actual != expected;
         if (!notEquals) System.err.println("Test failed: expected NOT: " + expected + " actual: " + actual);
