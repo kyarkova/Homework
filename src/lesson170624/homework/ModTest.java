@@ -1,6 +1,6 @@
 package lesson170624.homework;
 import lesson170624.classwork.MathUtils;
-import lesson170624.classwork.SimpleUnit;
+import utils.SimpleUnit;
 /**
  * Created by kseni on 26.06.2017.
  */

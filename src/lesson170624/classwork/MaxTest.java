@@ -1,5 +1,7 @@
 package lesson170624.classwork;
 
+import utils.SimpleUnit;
+
 /**
  * Created by kseni on 24.06.2017.
  */

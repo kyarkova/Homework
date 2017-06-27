@@ -1,4 +1,4 @@
-package lesson170624.classwork;
+package utils;
 
 /**
  * Created by kseni on 24.06.2017.

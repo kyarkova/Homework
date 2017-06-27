@@ -1,4 +1,4 @@
-package CodingBat;
+package codingbat;
 
 /**
  * Created by kseni on 24.06.2017.
