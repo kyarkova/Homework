@@ -12,7 +12,6 @@ public class FizzBuzzTest {
         System.out.println(SimpleUnit.assertEquals(FizzBuzz.fizzBuzz(333), "Fizz"));
         System.out.println(SimpleUnit.assertNotEquals(FizzBuzz.fizzBuzz(5), "Fizz"));
 
-
         System.out.println(SimpleUnit.assertEquals(FizzBuzz.fizzBuzz(5), "Buzz"));
         System.out.println(SimpleUnit.assertEquals(FizzBuzz.fizzBuzz(10), "Buzz"));
         System.out.println(SimpleUnit.assertEquals(FizzBuzz.fizzBuzz(1000), "Buzz"));
