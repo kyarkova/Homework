@@ -25,4 +25,26 @@ public class String_1 {
         return s + s + s;
     }
 
+    public String firstTwo(String str) {
+        if (str.length() < 2) return str;
+        else return str.substring(0, 2);
+    }
+
+    public String firstHalf(String str) {
+        return str.substring(0, str.length() / 2);
+    }
+
+    public String withoutEnd(String str) {
+        return str.substring(1, str.length() - 1);
+    }
+
+    public String comboString(String a, String b) {
+        return a.length() > b.length() ? b + a + b : a + b + a;
+    }
+
+    public String nonStart(String a, String b) {
+        return a.substring(1, a.length()) + b.substring(1, b.length());
+    }
+
+
 }
