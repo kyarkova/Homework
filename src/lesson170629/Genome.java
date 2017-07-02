@@ -1,15 +1,13 @@
 package lesson170629;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 /**
  * Created by kseni on 29.06.2017.
  */
 public class Genome {
+    private static  final int GENOME_SIZE = 30;
 
     public static void main(String[] args) {
-        byte[] data = DataGenerator.generate(30);
+        byte[] data = DataGenerator.generate(GENOME_SIZE);
 //        System.out.println(Arrays.toString(data));
 
 //        int i = 0;
