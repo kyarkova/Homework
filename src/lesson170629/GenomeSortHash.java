@@ -67,7 +67,7 @@ public class GenomeSortHash {
         long start = currentTimeMillis();
         HashMap<GenomeSortHash.Word, Integer> mapWords = new HashMap<>();
 
-        for (int i = 0; i < data.length - WORD_SIZE; i++) {
+        for (int i = 0; i < data.length - WORD_SIZE + 1; i++) {
             GenomeSortHash.Word word = new GenomeSortHash.Word(data, i);
             Integer frequency = mapWords.get(word);
             mapWords.put(word, frequency == null ? 1 : frequency + 1);
@@ -82,7 +82,7 @@ public class GenomeSortHash {
         start = currentTimeMillis();
         List<Word> list = new ArrayList<>();
 
-        for (int i = 0; i < data.length - WORD_SIZE; i++) {
+        for (int i = 0; i < data.length - WORD_SIZE + 1; i++) {
             list.add(new Word(data, i));
         }
 
