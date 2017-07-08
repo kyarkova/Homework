@@ -3,7 +3,7 @@ package codingbat;
 /**
  * Created by kseni on 24.06.2017.
  */
-public class warmUp_2 {
+public class WarmUp_2 {
     public String stringTimes(String str, int n) {
         String res = "";
         while (n > 0) {

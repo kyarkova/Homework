@@ -10,21 +10,22 @@ package lesson170704.homework;
 */
 public class Print {
 
-    public static void arrayToString(int[] arr) {
-
-        System.out.print("[");
-        for (int i = 0; i < arr.length - 1; i++) {
-            System.out.print(arr[i] + ", ");
+    public static String arrayToString(int[] arr) {
+        String res = "[";
+        if (arr.length > 0) {
+            for (int i = 0; i < arr.length - 1; i++) {
+                res += arr[i] + ", ";
+            }
+            res += arr[arr.length - 1];
         }
-        System.out.print(arr[arr.length - 1]);
-        System.out.println("]");
-
+        res += "]";
+        return res;
     }
 
     public static void main(String[] args) {
-        int arr[] = {1, 2, 3, 4, 5};
-
-        arrayToString(arr);
+        System.out.println(arrayToString(new int[]{}));
+        System.out.println(arrayToString(new int[]{1}));
+        System.out.println(arrayToString(new int[]{1, 2, 3, 4, 5}));
     }
 
 

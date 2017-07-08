@@ -109,5 +109,101 @@ public class Logic_1 {
         return n % 20 == 19 || n % 20 == 18;
     }
 
+    public boolean nearTen(int num) {
+        return num % 10 <= 2 || num % 10 >= 8;
+    }
+
+    public int teenSum(int a, int b) {
+        return (a >= 13 && a <= 19) || (b >= 13 && b <= 19) ? 19 : a + b;
+    }
+
+    public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
+        if (isAsleep) return false;
+        if (isMom) return true;
+        if (isMorning) return false;
+        return true;
+    }
+
+    public int teaParty(int tea, int candy) {
+        if (tea < 5 || candy < 5) return 0;
+        if (tea / candy >= 2 || candy / tea >= 2) return 2;
+        return 1;
+
+    }
+
+    public String fizzString(String str) {
+        String res = "";
+        if (str.charAt(0) == 'f') res += "Fizz";
+        if (str.charAt(str.length() - 1) == 'b') res += "Buzz";
+
+        return "".equals(res) ? str : res;
+    }
+
+    public String fizzString2(int n) {
+        String res = "";
+
+        if (n % 3 == 0) res += "Fizz";
+        if (n % 5 == 0) res += "Buzz";
+        return "".equals(res) ? n + "!" : res + "!";
+    }
+
+    public boolean twoAsOne(int a, int b, int c) {
+        return a + b == c || a + c == b || b + c == a;
+    }
+
+    public boolean inOrder(int a, int b, int c, boolean bOk) {
+        return bOk ? c > b : b > a && c > b;
+    }
+
+    public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
+        return equalOk ? a <= b && b <= c : a < b && b < c;
+    }
+
+    public boolean lastDigit(int a, int b, int c) {
+        return a % 10 == b % 10 || a % 10 == c % 10 || b % 10 == c % 10;
+    }
+
+    public boolean lessBy10(int a, int b, int c) {
+        return Math.abs(a - b) >= 10 || Math.abs(a - c) >= 10 || Math.abs(c - b) >= 10;
+    }
+
+    public int withoutDoubles(int die1, int die2, boolean noDoubles) {
+
+        if (noDoubles) {
+            if (die1 == die2) {
+                if (die1++ == 6) die1 = 1;
+            }
+        }
+        return die1 + die2;
+
+    }
+
+    public int maxMod5(int a, int b) {
+        if (a == b) return 0;
+        if (a % 5 == b % 5) return a < b ? a : b;
+        return a > b ? a : b;
+    }
+
+    public int redTicket(int a, int b, int c) {
+        return (a == b && b == c) ? (a == 2 ? 10 : 5) : (b != a && c != a ? 1 : 0);
+    }
+
+    public int greenTicket(int a, int b, int c) {
+        //return a==b&&a==c ? 20 : a!=b&&b!=c&&a!=c ? 0 : a==b||a==c||b==c ? 10 : 0;
+        return a == b && a == c ? 20 : a == b || a == c || b == c ? 10 : 0;
+
+    }
+
+    public int blueTicket(int a, int b, int c) {
+        return a + b == 10 || a + c == 10 || b + c == 10 ? 10 : (a + b) - (b + c) == 10 || (a + b) - (a + c) == 10 ? 5 : 0;
+    }
+
+    public boolean shareDigit(int a, int b) {
+        return a / 10 == b / 10 || a % 10 == b / 10 || a / 10 == b % 10 || a % 10 == b % 10;
+    }
+
+    public int sumLimit(int a, int b) {
+        return ("" + a).length() == ("" + (a + b)).length() ? a + b : a;
+    }
 
 }
