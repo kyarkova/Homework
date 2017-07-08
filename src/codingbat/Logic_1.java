@@ -16,7 +16,6 @@ public class Logic_1 {
         if (you <= 2 || date <= 2) {
             res = 0;
         }
-
         return res;
     }
 

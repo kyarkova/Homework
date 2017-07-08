@@ -5,7 +5,7 @@ package codingbat;
  */
 public class Logic_2 {
     public boolean makeBricks(int small, int big, int goal) {
-        return goal / 5 <= big ? goal % 5 <= small ? true : false : goal - 5 * big <= small ? true : false;
+        return goal/5 <= big ? goal%5 <= small :  goal - 5*big <= small;
 
     }
 
@@ -61,7 +61,7 @@ public class Logic_2 {
 
     public boolean evenlySpaced(int a, int b, int c) {
 
-        int temp = 0;
+        int temp;
         if (a > b) {
             temp = a;
             a = b;
@@ -77,11 +77,7 @@ public class Logic_2 {
             a = b;
             b = temp;
         }
-
-        if (c - b == b - a) {
-            return true;
-        }
-        return false;
+        return c - b == b - a;
     }
 
     public int makeChocolate(int small, int big, int goal) {

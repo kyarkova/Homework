@@ -5,13 +5,11 @@ package codingbat;
  */
 public class WarmUp_1 {
     public boolean sleepIn(boolean weekday, boolean vacation) {
-        if (!weekday | vacation) return true;
-        else return false;
+        return (!weekday | vacation);
     }
 
     public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
-        if (aSmile == bSmile) return true;
-        else return false;
+        return (aSmile == bSmile);
     }
 
     public int sumDouble(int a, int b) {
@@ -25,8 +23,7 @@ public class WarmUp_1 {
     }
 
     public boolean parrotTrouble(boolean talking, int hour) {
-        if (talking & (hour < 7 | hour > 20)) return true;
-        else return false;
+        return (talking & (hour < 7 | hour > 20));
     }
 
     public boolean makes10(int a, int b) {
@@ -58,7 +55,7 @@ public class WarmUp_1 {
     }
 
     public String front3(String str) {
-        String s = "";
+        String s;
         if (str.length() >= 3)
             s = str.substring(0, 3);
         else s = str;
@@ -75,7 +72,7 @@ public class WarmUp_1 {
     }
 
     public String front22(String str) {
-        String front = "";
+        String front;
         if (str.length() > 2) front = str.substring(0, 2);
         else front = str;
         return front + str + front;

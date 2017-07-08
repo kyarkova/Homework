@@ -74,7 +74,7 @@ public class String_2 {
 
     public String mixString(String a, String b) {
         String res = "";
-        int length = 0;
+        int length;
         if (a.length() < b.length()) {
             length = a.length();
         } else {

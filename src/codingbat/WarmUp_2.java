@@ -39,11 +39,8 @@ public class WarmUp_2 {
         if (index == str.length() - 1) {
             return false;
         }
-        if (str.charAt(index + 1) == 'x') {
-            return true;
-        } else {
-            return false;
-        }
+        return str.charAt(index + 1) == 'x';
+
     }
 
     public String stringBits(String str) {
