@@ -18,12 +18,12 @@ public class ArraysExamples {
 
         int[] b, x;
 
-        b = new int[] {};
+        b = new int[]{};
 
         b = new int[0];
 
         b = new int[10];
-        b = new int[] {0,0,0,0,0,0,0,0,0,0};
+        b = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
         System.out.println(a);
         System.out.println(a.toString());

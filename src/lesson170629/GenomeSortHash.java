@@ -94,7 +94,6 @@ public class GenomeSortHash {
 
         int countDup = 1;
         int countUnique = 0;
-        OUTER:
         for (int k = 0; k < list.size(); k++) {
             while (k + 1 < list.size() && list.get(k).equals(list.get(k + 1))) {
                 countDup++;

@@ -12,13 +12,13 @@ public class ArraysExamples2 {
 
 //		System.out.println(c);
 
-        int [][] triangle = {
+        int[][] triangle = {
                 {0},
-                {1,2},
-                {3,4,5},
+                {1, 2},
+                {3, 4, 5},
         };
 
-        int [] m = {0, 0, 1,    0, 2, 1,    3, 2, 1};
+        int[] m = {0, 0, 1, 0, 2, 1, 3, 2, 1};
 //i				       0           1           2
 //j                   0  1  2     0  1  2     0  1  2
 //n - j               3  2  1	    3  2  1     3  2  1
@@ -39,22 +39,20 @@ public class ArraysExamples2 {
     }
 
     private static int[] squareup(int n) {
-        int[] r = new int[n*n];
+        int[] r = new int[n * n];
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (i + j < n - 1) {
                 } else {
-                    r[i*n +j] = n - j;
+                    r[i * n + j] = n - j;
                 }
             }
         }
 
 
-
         return r;
     }
-
 
 
 }

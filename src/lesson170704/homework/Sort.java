@@ -10,11 +10,10 @@ import java.util.Random;
 public class Sort {
 
 
-
     public static void main(String[] args) {
         Random random = new Random();
 
-        int [] arr = new int[1_000_000];
+        int[] arr = new int[1_000_000];
         for (int i = 0; i < 1_000_000; i++) {
             arr[i] = random.nextInt(1_000_000);
         }
@@ -24,9 +23,9 @@ public class Sort {
         Arrays.sort(arr);
 
         long end = System.currentTimeMillis();
-        System.out.println(end-start);
+        System.out.println(end - start);
 
-         start = System.currentTimeMillis();
+        start = System.currentTimeMillis();
 
         end = System.currentTimeMillis();
     }

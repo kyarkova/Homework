@@ -1,6 +1,8 @@
 package lesson170624.homework;
+
 import lesson170624.classwork.MathUtils;
 import utils.SimpleUnit;
+
 /**
  * Created by kseni on 26.06.2017.
  */
@@ -25,8 +27,6 @@ public class IsPrimeTest {
         System.out.println(SimpleUnit.assertNotEquals(MathUtils.isPrime(1), true));
         System.out.println(SimpleUnit.assertNotEquals(MathUtils.isPrime(4), true));
         System.out.println(SimpleUnit.assertNotEquals(MathUtils.isPrime(-22), true));
-
-
 
 
     }

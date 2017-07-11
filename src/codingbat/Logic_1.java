@@ -117,23 +117,37 @@ public class Logic_1 {
     }
 
     public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
-        if (isAsleep) return false;
-        if (isMom) return true;
-        if (isMorning) return false;
+        if (isAsleep) {
+            return false;
+        }
+        if (isMom) {
+            return true;
+        }
+        if (isMorning) {
+            return false;
+        }
         return true;
     }
 
     public int teaParty(int tea, int candy) {
-        if (tea < 5 || candy < 5) return 0;
-        if (tea / candy >= 2 || candy / tea >= 2) return 2;
+        if (tea < 5 || candy < 5) {
+            return 0;
+        }
+        if (tea / candy >= 2 || candy / tea >= 2) {
+            return 2;
+        }
         return 1;
 
     }
 
     public String fizzString(String str) {
         String res = "";
-        if (str.charAt(0) == 'f') res += "Fizz";
-        if (str.charAt(str.length() - 1) == 'b') res += "Buzz";
+        if (str.charAt(0) == 'f') {
+            res += "Fizz";
+        }
+        if (str.charAt(str.length() - 1) == 'b') {
+            res += "Buzz";
+        }
 
         return "".equals(res) ? str : res;
     }
@@ -141,8 +155,12 @@ public class Logic_1 {
     public String fizzString2(int n) {
         String res = "";
 
-        if (n % 3 == 0) res += "Fizz";
-        if (n % 5 == 0) res += "Buzz";
+        if (n % 3 == 0) {
+            res += "Fizz";
+        }
+        if (n % 5 == 0) {
+            res += "Buzz";
+        }
         return "".equals(res) ? n + "!" : res + "!";
     }
 
@@ -170,7 +188,9 @@ public class Logic_1 {
 
         if (noDoubles) {
             if (die1 == die2) {
-                if (die1++ == 6) die1 = 1;
+                if (die1++ == 6) {
+                    die1 = 1;
+                }
             }
         }
         return die1 + die2;
@@ -178,8 +198,12 @@ public class Logic_1 {
     }
 
     public int maxMod5(int a, int b) {
-        if (a == b) return 0;
-        if (a % 5 == b % 5) return a < b ? a : b;
+        if (a == b) {
+            return 0;
+        }
+        if (a % 5 == b % 5) {
+            return a < b ? a : b;
+        }
         return a > b ? a : b;
     }
 

@@ -33,8 +33,12 @@ public class StringMethodsPractice {
     }
 
     private static String replace(String s, char oldCh, char newCh) {
-        if (s.length() == 0) return s;
-        if (oldCh == newCh) return s;
+        if (s.length() == 0) {
+            return s;
+        }
+        if (oldCh == newCh) {
+            return s;
+        }
         StringBuilder res = new StringBuilder();
         for (char ch : s.toCharArray()) {
             if (ch == oldCh) {

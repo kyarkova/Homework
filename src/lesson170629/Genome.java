@@ -4,7 +4,7 @@ package lesson170629;
  * Created by kseni on 29.06.2017.
  */
 public class Genome {
-    private static  final int GENOME_SIZE = 30;
+    private static final int GENOME_SIZE = 30;
 
     public static void main(String[] args) {
         byte[] data = DataGenerator.generate(GENOME_SIZE);

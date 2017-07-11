@@ -29,12 +29,16 @@ public class StringArrayList {
 
     @Override
     public String toString() {
-        if (size == 0) return "[]";
+        if (size == 0) {
+            return "[]";
+        }
         StringBuilder res = new StringBuilder("[" + elements[0]);
 
         for (int i = 1; i < elements.length; i++) {
             String s = elements[i];
-            if (s != null) res.append(", ").append(s);
+            if (s != null) {
+                res.append(", ").append(s);
+            }
         }
         return res.append("]").toString();
     }
@@ -80,13 +84,16 @@ public class StringArrayList {
     }
 
     public String get(int index) {
-        if (index >= size)
+        if (index >= size) {
             return "Слишком большой индекс: " + index;//throw new IndexOutOfBoundsException("Слишком большой индекс: " +  index);
+        }
         return elements[index];
     }
 
     public boolean set(int index, String newEl) {
-        if (index >= size) return false;//throw new IndexOutOfBoundsException("Слишком большой индекс: " +  index);
+        if (index >= size) {
+            return false;//throw new IndexOutOfBoundsException("Слишком большой индекс: " +  index);
+        }
         elements[index] = newEl;
         return true;
     }

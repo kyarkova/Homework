@@ -6,15 +6,19 @@ package lesson170627.homework;
 public class Converter {
     /**
      * Перевод чисел десятичной системы исчисления в двоичную
+     *
      * @param i     - число в десятичной системе исчисления
      * @param radix - основание системы исчисления, в которую нужно перевести число
      * @return строку, содержащую результирующее число
      */
     public static String toStringUnivers(int i, int radix) {
         // общее число цифр и букв англ. алфавита, позволяет переводить числа до основания 35
-        if (radix > 36 || radix < 2) return "Error! Введите основание системы исчисления от 2 до 35!";
-        if (i >= -radix & i <= radix)
+        if (radix > 36 || radix < 2) {
+            return "Error! Введите основание системы исчисления от 2 до 35!";
+        }
+        if (i >= -radix & i <= radix) {
             return "" + i;  // если число меньше, чем основание системы исчисления, то оно и является ответом
+        }
         char chars[] = { // вспомогательный массив для хранения символов итогового числа
                 '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
                 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
@@ -40,7 +44,9 @@ public class Converter {
      * @return строку, содержащую результирующее число
      */
     public static String toBinaryString(int i) {
-        if (i == 0) return "0";
+        if (i == 0) {
+            return "0";
+        }
         String res = "";
         boolean neg = (i < 0);
         int temp = 0;
@@ -59,7 +65,9 @@ public class Converter {
      * @return строку, содержащую результирующее число
      */
     public static String toHexString(int i) {
-        if (i >= -16 & i <= 16) return "" + i;
+        if (i >= -16 & i <= 16) {
+            return "" + i;
+        }
         // вспомогательный массив для хранения символов итогового числа
         char chars[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
         String res = "";
@@ -82,7 +90,9 @@ public class Converter {
      * @return строку, содержащую результирующее число
      */
     public static String toOctalString(int i) {
-        if (i >= -8 & i <= 8) return "" + i;
+        if (i >= -8 & i <= 8) {
+            return "" + i;
+        }
         String res = "";
         long temp = 0;
         long l = i;

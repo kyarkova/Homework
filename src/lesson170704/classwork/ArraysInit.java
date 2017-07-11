@@ -7,9 +7,9 @@ public class ArraysInit {
     public static void main(String[] args) {
 
         int[][] m = {
-                {0,0,0},
-                {0,0,0},
-        } ;
+                {0, 0, 0},
+                {0, 0, 0},
+        };
 
         int[][] m2 = new int[2][3];
 

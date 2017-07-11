@@ -14,7 +14,9 @@ public class WarmUp_2 {
     }
 
     public String frontTimes(String str, int n) {
-        if (str.length() >= 3) str = str.substring(0, 3);
+        if (str.length() >= 3) {
+            str = str.substring(0, 3);
+        }
         String res = "";
         while (n > 0) {
             res += str;
@@ -26,7 +28,9 @@ public class WarmUp_2 {
     int countXX(String str) {
         int count = 0;
         for (int i = 0; i < str.length() - 1; i++) {
-            if (str.charAt(i) == 'x' && str.charAt(i + 1) == 'x') count++;
+            if (str.charAt(i) == 'x' && str.charAt(i + 1) == 'x') {
+                count++;
+            }
         }
         return count;
     }
@@ -61,7 +65,9 @@ public class WarmUp_2 {
     }
 
     public int last2(String str) {
-        if (str.length() <= 2) return 0;
+        if (str.length() <= 2) {
+            return 0;
+        }
         int count = 0;
         String templ = "" + str.charAt(str.length() - 2) + str.charAt(str.length() - 1);
         for (int i = 0; i < str.length() - 2; i++) {
@@ -94,8 +100,9 @@ public class WarmUp_2 {
     public boolean array123(int[] nums) {
         for (int i = 0; i < nums.length - 2; i++) {
             if (nums[i] == 1) {
-                if (nums[i + 1] == 2 & nums[i + 2] == 3)
+                if (nums[i + 1] == 2 & nums[i + 2] == 3) {
                     return true;
+                }
             }
         }
         return false;
@@ -112,7 +119,9 @@ public class WarmUp_2 {
     }
 
     public String stringX(String str) {
-        if (str.length() < 2) return str;
+        if (str.length() < 2) {
+            return str;
+        }
         String res = "" + str.charAt(0);
         for (int i = 1; i < str.length() - 1; i++) {
             if (str.charAt(i) != 'x') {
