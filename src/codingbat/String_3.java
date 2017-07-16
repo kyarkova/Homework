@@ -80,6 +80,18 @@ public class String_3 {
         return count;
     }
 
+    public String sameEnds(String string) {
+        char[] chars = string.toCharArray();
+        for (int i = (string.length() + 1) / 2; i < string.length(); i++) {
+            if (chars[i] == chars[0]) {
+                if (string.substring(i).equals(string.substring(0, string.length() - i))) {
+                    return string.substring(0, string.length() - i);
+                }
+            }
+        }
+        return "";
+    }
+
     public String mirrorEnds(String string) {
         String res = "";
         int len = string.length();
@@ -92,24 +104,6 @@ public class String_3 {
         }
         return res;
 
-    }
-
-    public String notReplace(String str) {
-        String res = "";
-        int len = str.length();
-
-        for (int i = 0; i < len; i++) {
-            if (i - 1 >= 0 && Character.isLetter(str.charAt(i - 1))
-                    || i + 2 < len && Character.isLetter(str.charAt(i + 2))) {
-                res += str.charAt(i);
-            } else if (i + 1 < len && "is".equals(str.substring(i, i + 2))) {
-                res += "is not";
-                i++;
-            } else {
-                res += str.charAt(i);
-            }
-        }
-        return res;
     }
 
     public int sumDigits(String str) {
@@ -165,6 +159,24 @@ public class String_3 {
             }
         }
         return sum;
+    }
+
+    public String notReplace(String str) {
+        String res = "";
+        int len = str.length();
+
+        for (int i = 0; i < len; i++) {
+            if (i - 1 >= 0 && Character.isLetter(str.charAt(i - 1))
+                    || i + 2 < len && Character.isLetter(str.charAt(i + 2))) {
+                res += str.charAt(i);
+            } else if (i + 1 < len && "is".equals(str.substring(i, i + 2))) {
+                res += "is not";
+                i++;
+            } else {
+                res += str.charAt(i);
+            }
+        }
+        return res;
     }
 
 

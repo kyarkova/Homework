@@ -69,8 +69,6 @@ public class Logic_2 {
         } else if (b > 21) {
             return a;
         }
-
-
         return 21 - a > 21 - b ? b : a;
     }
 
