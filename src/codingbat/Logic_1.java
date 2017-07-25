@@ -81,10 +81,7 @@ public class Logic_1 {
         if (a + b == 6) {
             return true;
         }
-        if (Math.abs(a - b) == 6) {
-            return true;
-        }
-        return false;
+        return Math.abs(a - b) == 6;
 
     }
 
@@ -123,10 +120,7 @@ public class Logic_1 {
         if (isMom) {
             return true;
         }
-        if (isMorning) {
-            return false;
-        }
-        return true;
+        return !isMorning;
     }
 
     public int teaParty(int tea, int candy) {
