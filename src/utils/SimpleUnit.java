@@ -1,8 +1,5 @@
 package utils;
 
-/**
- * Created by kseni on 24.06.2017.
- */
 public class SimpleUnit {
     public static boolean assertEquals(String actual, String expected) {
         boolean equals = actual.equals(expected);

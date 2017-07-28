@@ -23,6 +23,7 @@ class TablePile extends CardPile {
         }
         return x <= clickX && clickX <= x + Card.width &&
                 y <= clickY && clickY <= bottom;
+
     }
 
     @Override
@@ -31,7 +32,6 @@ class TablePile extends CardPile {
             g.setColor(Color.BLACK);
             g.drawRect(x, y, Card.width, Card.height);
         }
-
         int localY = y;
         for (Card card : pile) {
             card.visibleTop = localY;

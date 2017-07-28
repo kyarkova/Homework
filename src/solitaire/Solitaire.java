@@ -82,7 +82,13 @@ public class Solitaire extends JFrame {
         } else {
             for (int i = 0; i < 13; i++) {
                 if (Solitaire.allPiles[i].includes(xCoord, yCoord)) {
-                    Solitaire.allPiles[i].tryPut(Solitaire.allPiles[pileSelected], selectedCard);
+                    if ((i > 1 && i < 6) || Solitaire.allPiles[i].empty()) {
+                        Solitaire.allPiles[i].tryPut(Solitaire.allPiles[pileSelected], selectedCard);
+                    } else if (i > 5 && !Solitaire.allPiles[i].empty()) {
+                        if (Solitaire.allPiles[i].top().visibleTop <= yCoord && yCoord <= Solitaire.allPiles[i].top().visibleBottom + Card.height) {
+                            Solitaire.allPiles[i].tryPut(Solitaire.allPiles[pileSelected], selectedCard);
+                        }
+                    }
                 }
             }
             deselectCards();
