@@ -1,7 +1,5 @@
 package lesson170809.homework;
 
-import lesson170809.homework.Dictionary.Pair;
-
 public class UseDictionary {
 
     public static void main(String[] args) {
@@ -42,45 +40,45 @@ public class UseDictionary {
         Dictionary<String, String> d = new Dictionary();
         long start = System.nanoTime();
         for (int i = 0; i < 1_000; i++) {
-            d.put(""+i, ""+i);
+            d.put("" + i, "" + i);
         }
         System.out.println("1_000 elements put      : " + (System.nanoTime() - start));
         for (int i = 0; i < 1_000; i++) {
-            d.get(""+i);
+            d.get("" + i);
         }
         System.out.println("1_000 elements get      : " + (System.nanoTime() - start));
         for (int i = 0; i < 1_000; i++) {
-            d.remove(""+i);
+            d.remove("" + i);
         }
         System.out.println("1_000 elements remove   : " + (System.nanoTime() - start));
         System.out.println("1_000 elements total    : " + (System.nanoTime() - start));
         System.out.println();
 
         for (int i = 0; i < 10_000; i++) {
-            d.put(""+i, ""+i);
+            d.put("" + i, "" + i);
         }
         System.out.println("10_000 elements put     : " + (System.nanoTime() - start));
         for (int i = 0; i < 10_000; i++) {
-            d.get(""+i);
+            d.get("" + i);
         }
         System.out.println("10_000 elements get     : " + (System.nanoTime() - start));
         for (int i = 0; i < 10_000; i++) {
-            d.remove(""+i);
+            d.remove("" + i);
         }
         System.out.println("10_000 elements remove  : " + (System.nanoTime() - start));
         System.out.println("10_000 elements total   : " + (System.nanoTime() - start));
         System.out.println();
 
         for (int i = 0; i < 100_000; i++) {
-            d.put(""+i, ""+i);
+            d.put("" + i, "" + i);
         }
         System.out.println("100_000 elements put    : " + (System.nanoTime() - start));
         for (int i = 0; i < 100_000; i++) {
-            d.get(""+i);
+            d.get("" + i);
         }
         System.out.println("100_000 elements get    : " + (System.nanoTime() - start));
         for (int i = 0; i < 100_000; i++) {
-            d.remove(""+i);
+            d.remove("" + i);
         }
         System.out.println("100_000 elements remove : " + (System.nanoTime() - start));
         System.out.println("100_000 elements total  : " + (System.nanoTime() - start));

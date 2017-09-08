@@ -20,6 +20,7 @@ public class GuineaPig implements Pet {
     public void runAway() {
         System.out.println("runs away");
     }
+
     public void escape() {
         System.out.println("escapes");
     }

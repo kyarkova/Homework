@@ -11,6 +11,7 @@ public class Dictionary<K, V> implements Iterable<Pair> {
     private static int count = 0;
     private static final int MAX = 3;
     int curIndex;
+
     public static class Pair<K, V> {
         K key;
         V value;

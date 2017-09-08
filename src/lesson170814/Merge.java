@@ -7,15 +7,15 @@ import java.util.Arrays;
  */
 public class Merge {
     public static void main(String[] args) {
-        Integer[] a= {10,20,30,40,15,25,30,35,45};
-        Integer[] a2= {10,10,10,10,10,10,10,10,10};
+        Integer[] a = {10, 20, 30, 40, 15, 25, 30, 35, 45};
+        Integer[] a2 = {10, 10, 10, 10, 10, 10, 10, 10, 10};
 
         Integer[] aux = new Integer[a.length];
-        merge(a,aux,0,a.length-1,3);
+        merge(a, aux, 0, a.length - 1, 3);
         System.out.println(Arrays.toString(a));
 
         Integer[] aux2 = new Integer[a.length];
-        merge(a2,aux2,0,a2.length-1,3);
+        merge(a2, aux2, 0, a2.length - 1, 3);
         System.out.println(Arrays.toString(a2));
     }
 

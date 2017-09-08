@@ -21,15 +21,15 @@ class CardPile {
         return pile.isEmpty();
     }
 
-    int size(){
+    int size() {
         return pile.size();
     }
 
-    int indexOf(Card card){
+    int indexOf(Card card) {
         return pile.indexOf(card);
     }
 
-    Card get (int i){
+    Card get(int i) {
         return pile.get(i);
     }
 

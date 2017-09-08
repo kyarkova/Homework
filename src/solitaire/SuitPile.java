@@ -12,7 +12,7 @@ class SuitPile extends CardPile {
             int index = selectedPile.indexOf(selectedCard);
             if (index == selectedPile.size() - 1) {
                 Card card = selectedPile.pop();
-                card.isSelected=false;
+                card.isSelected = false;
                 push(card);
             }
             allSuitsFull();

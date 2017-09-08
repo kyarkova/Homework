@@ -1,10 +1,9 @@
-package lesson170811;
+package lesson170811.homework;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Random;
 
 public class SortClassExample {
 
@@ -36,7 +35,7 @@ public class SortClassExample {
 
     private static void fill(A[] a) {
         for (int i = 0; i < a.length; i++) {
-          //  a[i] = new A();
+            //  a[i] = new A();
         }
     }
 
@@ -47,7 +46,7 @@ class A implements Comparable<A> {
     int x;
 
     public A(int r) {
-      x = r;
+        x = r;
     }
 
     @Override

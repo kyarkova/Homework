@@ -42,7 +42,6 @@ public class Cat implements Pet {
     }
 
 
-
     @Override
     public void stroke() {
         brain.stroke();
@@ -73,9 +72,11 @@ public class Cat implements Pet {
     private void meow() {
         System.out.println("meow");
     }
+
     private void purr() {
         System.out.println("purr-purr-purr");
     }
+
     private void goAway() {
         System.out.println("goes away");
     }

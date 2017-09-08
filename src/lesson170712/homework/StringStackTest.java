@@ -1,10 +1,7 @@
-package lesson170712;
+package lesson170712.homework;
 
 import utils.SimpleUnit;
 
-/**
- * Created by kseni on 16.07.2017.
- */
 public class StringStackTest {
 
 
