@@ -3,10 +3,7 @@ package lesson170704.homework;
 import java.util.Arrays;
 import java.util.Random;
 
-/**
- * Created by kseni on 05.07.2017.
- */
-// отсортировать миллион целых чисел. сравнить стандартный Arrays.sort и Radix
+// отсортировать миллион целых чисел. сравнить стандартный Arrays.sortCountingByte и Radix
 public class Sort {
 
 
